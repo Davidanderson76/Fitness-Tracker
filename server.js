@@ -17,7 +17,7 @@ app.use(express.json());
 //static files//
 app.use(express.static("public"));
 
-let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+const MONGODB_URI = process.env.MONGOATLAS_URI || "mongodb://localhost/workout";
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useFindAndModify: false
